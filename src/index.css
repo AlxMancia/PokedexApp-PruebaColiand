@@ -302,3 +302,10 @@ img{
   border-radius: 10px;
   background-color: gainsboro;
 }
+
+.lastSearch{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

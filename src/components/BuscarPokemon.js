@@ -1,9 +1,13 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { nextId, searchNewPoke } from '../actions/poke';
+import { titleCase } from '../helper/upperCase';
 import { useForm } from '../hooks/useForm';
 
 export const BuscarPokemon = () => {
+
+    const lastSearch = localStorage.getItem('pokemon');
+
     const dispatch = useDispatch();
 
     const {_idPoke} = useSelector( state => state.poke );
@@ -48,7 +52,11 @@ export const BuscarPokemon = () => {
                             className=" btn btn-primary btn-search"
                             value="Buscar" 
                         />
+                       
                     </div>
+                    {
+                        (lastSearch) && <span className='lastSearch'>{`El ultimo pokemon buscado fue (*): ${titleCase(lastSearch)}`}</span>
+                    }
                 </form>
             </div>
             <div className="menu-button">

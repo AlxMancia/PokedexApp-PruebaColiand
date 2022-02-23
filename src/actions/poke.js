@@ -19,6 +19,9 @@ export const nextId = (idPoke) => {
                 habitat,
                 order,
                 shape } = data2;
+            if(name){
+                localStorage.setItem('pokemon',name)
+            }
 
                 if(habitat){
                     dispatch(saveNewPoke({name, 
@@ -78,6 +81,9 @@ export const searchNewPoke =  (search) =>{
                 habitat,
                 order,
                 shape } = data2;
+            if(name){
+                localStorage.setItem('pokemon',name)
+            }
 
             if(habitat){
                 dispatch(saveNewPoke({name, 
