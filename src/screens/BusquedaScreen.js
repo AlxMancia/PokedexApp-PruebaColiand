@@ -9,19 +9,23 @@ import { titleCase } from '../helper/upperCase';
 
 export const BusquedaScreen = () => {
 
-    
-
     const {name,_idPoke,image} = useSelector( state => state.poke );
+
+    console.log(_idPoke);
 
     return (
         <>
+
             <BuscarPokemon/>
-            <div className='pkCardContainer'>
+            {
+                (_idPoke>=1) && <div><div className='pkCardContainer'>
                 <PokemonCard name={name} id={_idPoke} image={image}/>
             </div>
             <div className='form-group'>
                 <Link to="/detalles" className="btn btn-primary center">Ir a detalles</Link>
-            </div>
+            </div></div>
+            }
+            
         </>
     )
 }

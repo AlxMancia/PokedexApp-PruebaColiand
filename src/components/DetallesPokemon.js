@@ -6,9 +6,6 @@ import { Movimientos } from './Movimientos';
 export const DetallesPokemon = () => {
     const {altura,peso,experiencia,totalMov,totalHab,base_happiness,capture_rate,color,generation,growth_rate,habitat,order,shape} = useSelector( state => state.poke );
 
-    JSON.stringify(totalMov);
-    JSON.stringify(totalHab)
-
     return(
         <div className='detalles2'>
             <div className='allDetalles'>

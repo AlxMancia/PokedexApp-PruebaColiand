@@ -1,7 +1,7 @@
 import { types } from "../types/types";
 
 const initialState = {
-    _idPoke:1,
+    _idPoke:0,
     name:'bulbasaur',
     image:'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
     altura:7,
