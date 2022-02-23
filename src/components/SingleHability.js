@@ -26,7 +26,7 @@ export const SingleHability = (hab) => {
             }
           }
         getHab();
-    }, [])
+    },)
 
     return(
         <div className='singleHab'>

@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 import { BuscarPokemon } from '../components/BuscarPokemon';
 import { PokemonCard } from '../components/PokemonCard';
 import { Link } from 'react-router-dom';
-import { titleCase } from '../helper/upperCase';
 
 
 

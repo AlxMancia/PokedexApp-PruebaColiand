@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { SingleHability } from './SingleHability';
-import { SingleMove } from './SingleMove';
 
 export const Habilidades = () => {
     const {totalHab} = useSelector( state => state.poke );
