@@ -11,7 +11,6 @@ export const BusquedaScreen = () => {
 
     const {name,_idPoke,image} = useSelector( state => state.poke );
 
-    console.log(_idPoke);
 
     return (
         <>
